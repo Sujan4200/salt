@@ -2,9 +2,6 @@ base:
   "*":
     - common.packages
 services:
-  "services:postgres":
-    - match: grain
-    - postgres
-  "services:mongodb":
-    - match: grain
-    - mongodb
+  "G@roles:dbone":
+        - match: grain
+        - postgres
